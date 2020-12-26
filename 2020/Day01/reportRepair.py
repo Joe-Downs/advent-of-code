@@ -8,9 +8,10 @@ for number in f:
 def search2020():
     for number in report:
         for factor in report:
-            if number + factor == 2020:
-                print(f"{number} + {factor} = 2020")
-                print(f"{number} * {factor} = {number * factor}")
-                return
+            for factor2 in report:
+                if number + factor + factor2 == 2020:
+                    print(f"{number} + {factor} + {factor2} = 2020")
+                    print(f"{number} * {factor} * {factor2} = {number * factor * factor2}")
+                    return
 
 search2020()
